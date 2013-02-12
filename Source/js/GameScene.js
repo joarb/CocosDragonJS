@@ -37,7 +37,7 @@ GameScene.prototype.onDidLoadFromCCB = function()
 
     this.score = 0;
 
-    var level = cc.Reader.load("Level.ccbi");
+    var level = cc.BuilderReader.load("Level.ccbi", null, null, "interface/");
     
     // Center the level on Screen
     gLevelOffsetX = (gWinSize.width-CD_LEVEL_WIDTH*gScaleFactor)/2;
